@@ -85,7 +85,7 @@ const timerHardware_t timerHardware[USABLE_TIMER_CHANNEL_COUNT] = {
 	},
 	{	/* TIM1 PWM generator for DC Brushed MOTOR 2 */
 		.tim = TIM1,
-		.tag = IO_TAG(PA10),
+		.tag = IO_TAG(PA10),				// TIM1 PA9 (TIM_Channel_2) is not working for some reason
 		.channel = TIM_Channel_3,
 		.usageFlags = TIM_USE_MOTOR,
 		.output = TIMER_OUTPUT_STANDARD,
